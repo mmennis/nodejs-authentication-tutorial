@@ -11,11 +11,12 @@ module.exports = function(req, res, next) {
 
     try {
         // if can veriy the token, set req.user and pass to the next middleware
-        const decoded = jwt.verify(token, conig.get("myprivatekey"));
+        const decoded = jwt.verify(token, config.get('myprivatekey'));
         req.user = decoded,
         next();
     } catch (ex) {
         // if invalid token
+        console.error('Problem with token: ' + ex);
         res.status(400).send('Invalid token');
     }
 };

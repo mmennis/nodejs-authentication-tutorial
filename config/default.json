@@ -1,3 +1,4 @@
 {
-    "myprivatekey": "ThisIsaSIMPLEPrivateKey"
+    "myprivatekey": "ThisIsaSIMPLEPrivateKey",
+    "mongodbURI": "mongodb://localhost/nodejsauth"
 }
