@@ -28,7 +28,7 @@ const UserSchema = new mongoose.Schema({
 });
 
 // custom schema method to generate token
-UserSchema.methods.generateAuthToken = funtion() {
+UserSchema.methods.generateAuthToken = function() {
     // get the private key from the config file -> environment variable
     const token = jwt.sign({ _id: this._id, isAdmin: this.isAdmin }, config.get('myprivatekey'));
     return token;
