@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/mmennis/nodejs-authentication-tutorial#readme",
   "devDependencies": {
-    "nodemon": "^1.19.3"
+    "nodemon": "^2.0.20"
   },
   "dependencies": {
     "bcrypt": "^5.0.0",
